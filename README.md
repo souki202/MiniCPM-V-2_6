@@ -23,6 +23,7 @@ tags:
 ## Usage
 
 WSL上での使用方法
+事前にCUDAのインストールを行ってください
 
 ```bash
 # venvの作成
@@ -49,6 +50,10 @@ python3 webui.py
 
 - `--port` : ポート番号の指定
 - `--host` : ホスト名の指定
+
+```bash
+python3 webui.py --port 8080 --host 0.0.0.0
+```
 
 ## Original README
 
