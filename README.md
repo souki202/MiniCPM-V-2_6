@@ -1,3 +1,19 @@
+---
+pipeline_tag: image-text-to-text
+datasets:
+- openbmb/RLAIF-V-Dataset
+library_name: transformers
+language:
+- multilingual
+tags:
+- minicpm-v
+- vision
+- ocr
+- multi-image
+- video
+- custom_code
+---
+
 # MiniCPM-V 2.6: A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone
 
 ## Original Repository
@@ -42,22 +58,6 @@ python3 webui.py
 - `--host` : ホスト名の指定
 
 ## Original README
-
----
-pipeline_tag: image-text-to-text
-datasets:
-- openbmb/RLAIF-V-Dataset
-library_name: transformers
-language:
-- multilingual
-tags:
-- minicpm-v
-- vision
-- ocr
-- multi-image
-- video
-- custom_code
----
 
 <h1>A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone</h1>
 
