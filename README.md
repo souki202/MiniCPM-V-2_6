@@ -1,24 +1,8 @@
----
-pipeline_tag: image-text-to-text
-datasets:
-- openbmb/RLAIF-V-Dataset
-library_name: transformers
-language:
-- multilingual
-tags:
-- minicpm-v
-- vision
-- ocr
-- multi-image
-- video
-- custom_code
----
-
 # MiniCPM-V 2.6: A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone
 
 ## Original Repository
 
-<h1>A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone</h1>
+A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone
 
 [GitHub](https://github.com/OpenBMB/MiniCPM-V) | [Demo](https://huggingface.co/spaces/openbmb/MiniCPM-V-2_6)</a> 
 
@@ -56,6 +40,30 @@ python3 webui.py
 
 - `--port` : ポート番号の指定
 - `--host` : ホスト名の指定
+
+## Original README
+
+---
+pipeline_tag: image-text-to-text
+datasets:
+- openbmb/RLAIF-V-Dataset
+library_name: transformers
+language:
+- multilingual
+tags:
+- minicpm-v
+- vision
+- ocr
+- multi-image
+- video
+- custom_code
+---
+
+<h1>A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone</h1>
+
+[GitHub](https://github.com/OpenBMB/MiniCPM-V) | [Demo](https://huggingface.co/spaces/openbmb/MiniCPM-V-2_6)</a>
+
+## MiniCPM-V 2.6
 
 **MiniCPM-V 2.6** is the latest and most capable model in the MiniCPM-V series. The model is built on SigLip-400M and Qwen2-7B with a total of 8B parameters. It exhibits a significant performance improvement over MiniCPM-Llama3-V 2.5, and introduces new features for multi-image and video understanding. Notable features of MiniCPM-V 2.6 include:
 
