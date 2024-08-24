@@ -26,7 +26,13 @@ WSL上での使用方法
 事前にCUDAのインストールを行ってください
 
 ```bash
-# venvの作成
+# venvが作成できない場合のみ
+# 必要であればupdate, upgradeしてvenvの導入
+sudo apt update
+sudo apt upgrade
+sudo apt install python3.10-venv
+
+# venvの作成 環境により、pythonではなくpython3
 python -m venv venv
 source venv/bin/activate
 
@@ -52,7 +58,7 @@ python3 webui.py
 - `--host` : ホスト名の指定
 
 ```bash
-python3 webui.py --port 8080 --host 0.0.0.0
+python3 webui.py --port 7860 --host 0.0.0.0
 ```
 
 ## Original README
