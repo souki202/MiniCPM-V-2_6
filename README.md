@@ -42,6 +42,10 @@ pip install packaging wheel
 pip install -r requirements.txt
 ```
 
+### モデルの配置
+
+[MiniCPM-V 2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) にある各safetensorsをダウンロードし、リポジトリの直下に配置してください
+
 ### WebUIの起動
 
 ```bash

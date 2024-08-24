@@ -7,7 +7,7 @@ import os
 import asyncio
 import argparse
 
-model_path = './'
+model_path = './model/'
 
 # モデルとトークナイザーの読み込み関数
 def load_model():
