@@ -61,6 +61,27 @@ python webui.py
 python webui.py --port 7860 --host 0.0.0.0
 ```
 
+#### ローカルネットワーク内の別環境から接続する場合
+
+WSLの場合、ポートフォワーディングを行う必要があります
+
+```bash
+# WSL側でIPアドレスを取得
+ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
+```
+
+出てきたIPアドレスを、Windows側でポートフォワーディングの設定に登録します
+
+```shell
+# 登録
+netsh interface portproxy add v4tov4 listenport=<Windows側ポート> listenaddress=0.0.0.0 connectport=<Gradioのポート> connectaddress=<WSLのIPアドレス>
+
+# 設定されていることの確認
+netsh interface portproxy show all
+```
+
+必要に応じてファイアウォールを開放する必要があります
+
 ## Original README
 
 <h1>A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone</h1>
