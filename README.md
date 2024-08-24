@@ -44,12 +44,12 @@ pip install -r requirements.txt
 
 ### モデルの配置
 
-[MiniCPM-V 2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) にある各safetensorsをダウンロードし、`./model/`内に配置してください
+[MiniCPM-V 2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) にある各safetensorsをダウンロードし、リポジトリ直下に配置してください
 
 ### WebUIの起動
 
 ```bash
-python3 webui.py
+python webui.py
 ```
 
 #### コマンドライン引数
@@ -58,7 +58,7 @@ python3 webui.py
 - `--host` : ホスト名の指定
 
 ```bash
-python3 webui.py --port 7860 --host 0.0.0.0
+python webui.py --port 7860 --host 0.0.0.0
 ```
 
 ## Original README
