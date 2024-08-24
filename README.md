@@ -18,13 +18,6 @@ tags:
 
 ## Original Repository
 
-A GPT-4V Level MLLM for Single Image, Multi Image and Video on Your Phone
-
-[GitHub](https://github.com/OpenBMB/MiniCPM-V) | [Demo](https://huggingface.co/spaces/openbmb/MiniCPM-V-2_6)</a> 
-
-
-## MiniCPM-V 2.6
-
 [MiniCPM-V 2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6)
 
 ## Usage
